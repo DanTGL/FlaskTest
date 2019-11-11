@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Video</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/video.css">
+</head>
+<body>
+    <div id="main">
+        <video width="480" height="360" controls>
+            <source src="{{ video_file }}" type="video/mp4" />
+        </video>
+        <p>{{ video_name }}</p>
+        <p style="vertical-align:middle; font-size:20px;">{{ video_desc }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/content/blog.css">
+    <script type="text/javascript" src="/static/scripts/blog.js"></script>
+    <script type="text/javascript" src="/static/scripts/libs/pdf.js"></script>
+    <script type="text/javascript" src="/static/scripts/libs/pdf.worker.js"></script>
+</head>
+<body onkeydown="keyDown(event)">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/blog/about">About</a>
+        <a href="/blog/games">Games</a>
+        <a href="/blog/development">Development</a>
+        <a href="/blog/contact">Contact</a>
+    </div>
+    <button id="button1" type="button" onclick="openNav()">Test</button>
+    <div id="main" onclick="closeNav()">
+        <!--<div id="rects" class="rects">
+        <b href="blog/about">about</b>
+        <b href="blog/test">test</b>
+    </div>
+    <button id="rect1" class="rect1" on onclick="pressed()">This is a rectangle</button>
+    <div id="text">
+        {{text}}
+    </div>-->
+        <script type="text/javascript">
+            initPage('blog');
+            //RenderPDF('/static/blog/blog.pdf', document.getElementById('main'));
+        </script>
+        <!--<iframe id="page" src="{{iframe}}" width="1000" height="1000" onload"loadiframe()"></iframe>-->
+    </div>
+</body>
+</html>

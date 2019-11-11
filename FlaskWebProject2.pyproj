@@ -1,0 +1,703 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2f3dfeba-fdb6-4cd5-8544-915e18e85760</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebProject2</Name>
+    <RootNamespace>FlaskWebProject2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="forum.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="static\assets\sounds\BGClip.mp3" />
+    <Content Include="static\assets\sounds\BlueLevel_cue.wav" />
+    <Content Include="static\assets\sounds\MyGame_cue.wav" />
+    <Content Include="static\assets\textures\Consolas-72.png" />
+    <Content Include="static\assets\textures\fonts\Consolas-16.fnt" />
+    <Content Include="static\assets\textures\fonts\Consolas-16.png" />
+    <Content Include="static\assets\textures\fonts\Consolas-24.fnt" />
+    <Content Include="static\assets\textures\fonts\Consolas-24.png" />
+    <Content Include="static\assets\textures\fonts\Consolas-32.fnt" />
+    <Content Include="static\assets\textures\fonts\Consolas-32.png" />
+    <Content Include="static\assets\textures\fonts\Consolas-72.fnt" />
+    <Content Include="static\assets\textures\fonts\Consolas-72.png" />
+    <Content Include="static\assets\textures\fonts\Segment7-96.fnt" />
+    <Content Include="static\assets\textures\fonts\Segment7-96.png" />
+    <Content Include="static\assets\textures\fonts\system-default-font.fnt" />
+    <Content Include="static\assets\textures\fonts\system-default-font.png" />
+    <Content Include="static\assets\textures\minion_collector.jpg" />
+    <Content Include="static\assets\textures\minion_collector.png" />
+    <Content Include="static\assets\textures\minion_portal.jpg" />
+    <Content Include="static\assets\textures\minion_portal.png" />
+    <Content Include="static\assets\textures\spritesheets\minion_sprite.png" />
+    <Content Include="static\blog\about.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="static\assets\BlueLevel.xml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\assets\scene.xml" />
+    <Content Include="static\content\blog.css" />
+    <Content Include="static\content\rts_styles.css" />
+    <Content Include="static\content\upload_video.css" />
+    <Content Include="static\content\video.css" />
+    <Content Include="static\emscripten\hello.c">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\images\menu_icon.png" />
+    <Content Include="static\images\RTS\.DS_Store" />
+    <Content Include="static\images\RTS\buttons.png" />
+    <Content Include="static\images\RTS\loader.gif" />
+    <Content Include="static\images\RTS\maininterface.png" />
+    <Content Include="static\images\RTS\maps\.DS_Store" />
+    <Content Include="static\images\RTS\maps\level-one-debug-grid.png" />
+    <Content Include="static\images\RTS\maps\level-one.png" />
+    <Content Include="static\images\RTS\missionscreen.png" />
+    <Content Include="static\images\RTS\splashscreen.png" />
+    <Content Include="static\scripts\Engine\BoundingBox.js" />
+    <Content Include="static\scripts\Engine\Cameras\Camera.js" />
+    <Content Include="static\scripts\Engine\Cameras\Camera_Manipulation.js" />
+    <Content Include="static\scripts\Engine\Core\Engine_Core.js" />
+    <Content Include="static\scripts\Engine\Core\Engine_GameLoop.js" />
+    <Content Include="static\scripts\Engine\Core\Engine_Input.js" />
+    <Content Include="static\scripts\Engine\Core\Engine_Textures.js" />
+    <Content Include="static\scripts\Engine\Core\Engine_VertexBuffer.js" />
+    <Content Include="static\scripts\Engine\Core\Resources\Engine_AudioClips.js" />
+    <Content Include="static\scripts\Engine\Core\Resources\Engine_Fonts.js" />
+    <Content Include="static\scripts\Engine\Core\Resources\Engine_ResourceMap.js" />
+    <Content Include="static\scripts\Engine\GameObjects\GameObject.js" />
+    <Content Include="static\scripts\Engine\GameObjects\GameObjectSet.js" />
+    <Content Include="static\scripts\Engine\GameObjects\GameObject_PixelCollision.js" />
+    <Content Include="static\scripts\Engine\Renderables\FontRenderable.js" />
+    <Content Include="static\scripts\Engine\Renderables\SpriteAnimateRenderable.js" />
+    <Content Include="static\scripts\Engine\Renderables\SpriteRenderable.js" />
+    <Content Include="static\scripts\Engine\Renderables\SpriteRenderable_PixelCollision.js" />
+    <Content Include="static\scripts\Engine\Renderables\TextureRenderable.js" />
+    <Content Include="static\scripts\Engine\Renderables\TextureRenderable_PixelCollision.js" />
+    <Content Include="static\scripts\Engine\Scene.js" />
+    <Content Include="static\scripts\Engine\Shaders\SpriteShader.js" />
+    <Content Include="static\scripts\Engine\Shaders\TextureShader.js" />
+    <Content Include="static\scripts\Engine\Transform.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\scripts\Engine\lib\gl-matrix-min.js" />
+    <Content Include="static\scripts\Engine\Renderables\Renderable.js" />
+    <Content Include="static\scripts\Engine\Shaders\SimpleShader.js" />
+    <Content Include="static\scripts\Game\BlueLevel.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\scripts\Game\Game.js" />
+    <Content Include="static\scripts\Game\GameOver.js" />
+    <Content Include="static\scripts\Game\Objects\Brain.js" />
+    <Content Include="static\scripts\Game\Objects\DyePack.js" />
+    <Content Include="static\scripts\Game\Objects\Hero.js" />
+    <Content Include="static\scripts\Game\Objects\Minion.js" />
+    <Content Include="static\scripts\Game\Objects\TextureObject.js" />
+    <Content Include="static\scripts\Game\Util\SceneFileParser.js" />
+    <Content Include="static\scripts\blog.js" />
+    <Content Include="static\scripts\libs\jquery.js" />
+    <Content Include="static\scripts\libs\pdf.js" />
+    <Content Include="static\scripts\libs\pdf.js.map" />
+    <Content Include="static\scripts\libs\pdf.worker.js" />
+    <Content Include="static\scripts\libs\pdf.worker.js.map" />
+    <Content Include="static\scripts\rts\common.js" />
+    <Content Include="static\scripts\rts\game.js" />
+    <Content Include="static\scripts\rts\maps.js" />
+    <Content Include="static\scripts\rts\mouse.js" />
+    <Content Include="static\scripts\rts\singleplayer.js" />
+    <Content Include="static\shaders\Game\SimpleVS.glsl" />
+    <Content Include="static\shaders\Game\SimpleFS.glsl" />
+    <Content Include="static\shaders\TextureFS.glsl" />
+    <Content Include="static\shaders\TextureVS.glsl" />
+    <Content Include="static\viewer\cmaps\78-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\78-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\78-H.bcmap" />
+    <Content Include="static\viewer\cmaps\78-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\78-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\78-V.bcmap" />
+    <Content Include="static\viewer\cmaps\78ms-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\78ms-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\83pv-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\90ms-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\90ms-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\90msp-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\90msp-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\90pv-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\90pv-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Add-H.bcmap" />
+    <Content Include="static\viewer\cmaps\Add-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\Add-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Add-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-0.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-1.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-3.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-4.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-5.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-6.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-CNS1-UCS2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-0.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-1.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-3.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-4.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-5.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-GB1-UCS2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-0.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-1.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-3.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-4.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-5.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-6.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Japan1-UCS2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Korea1-0.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Korea1-1.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Korea1-2.bcmap" />
+    <Content Include="static\viewer\cmaps\Adobe-Korea1-UCS2.bcmap" />
+    <Content Include="static\viewer\cmaps\B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\B5pc-H.bcmap" />
+    <Content Include="static\viewer\cmaps\B5pc-V.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS1-H.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS1-V.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS2-H.bcmap" />
+    <Content Include="static\viewer\cmaps\CNS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\ETen-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\ETen-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\ETenms-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\ETenms-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\ETHK-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\ETHK-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Ext-H.bcmap" />
+    <Content Include="static\viewer\cmaps\Ext-RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\Ext-RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Ext-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GB-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GB-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GB-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GB-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBK-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBK-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBK2K-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBK2K-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBKp-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBKp-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBpc-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBpc-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBT-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBT-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBT-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBT-V.bcmap" />
+    <Content Include="static\viewer\cmaps\GBTpc-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\GBTpc-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\H.bcmap" />
+    <Content Include="static\viewer\cmaps\Hankaku.bcmap" />
+    <Content Include="static\viewer\cmaps\Hiragana.bcmap" />
+    <Content Include="static\viewer\cmaps\HKdla-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKdla-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\HKdlb-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKdlb-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\HKgccs-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKgccs-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\HKm314-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKm314-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\HKm471-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKm471-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\HKscs-B5-H.bcmap" />
+    <Content Include="static\viewer\cmaps\HKscs-B5-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Katakana.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-Johab-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-Johab-V.bcmap" />
+    <Content Include="static\viewer\cmaps\KSC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCms-UHC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCms-UHC-HW-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCms-UHC-HW-V.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCms-UHC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCpc-EUC-H.bcmap" />
+    <Content Include="static\viewer\cmaps\KSCpc-EUC-V.bcmap" />
+    <Content Include="static\viewer\cmaps\LICENSE" />
+    <Content Include="static\viewer\cmaps\NWP-H.bcmap" />
+    <Content Include="static\viewer\cmaps\NWP-V.bcmap" />
+    <Content Include="static\viewer\cmaps\RKSJ-H.bcmap" />
+    <Content Include="static\viewer\cmaps\RKSJ-V.bcmap" />
+    <Content Include="static\viewer\cmaps\Roman.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UCS2-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UCS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF16-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF16-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF8-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniCNS-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UCS2-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UCS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF16-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF16-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF8-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniGB-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UCS2-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UCS2-HW-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UCS2-HW-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UCS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF16-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF16-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF8-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF16-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF16-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF8-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJIS2004-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISPro-UCS2-HW-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISPro-UCS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISPro-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISX0213-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISX0213-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISX02132004-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniJISX02132004-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UCS2-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UCS2-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF16-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF16-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF32-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF32-V.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF8-H.bcmap" />
+    <Content Include="static\viewer\cmaps\UniKS-UTF8-V.bcmap" />
+    <Content Include="static\viewer\cmaps\V.bcmap" />
+    <Content Include="static\viewer\cmaps\WP-Symbol.bcmap" />
+    <Content Include="static\viewer\compressed.tracemonkey-pldi-09.pdf" />
+    <Content Include="static\viewer\debugger.js" />
+    <Content Include="static\viewer\images\annotation-check.svg" />
+    <Content Include="static\viewer\images\annotation-comment.svg" />
+    <Content Include="static\viewer\images\annotation-help.svg" />
+    <Content Include="static\viewer\images\annotation-insert.svg" />
+    <Content Include="static\viewer\images\annotation-key.svg" />
+    <Content Include="static\viewer\images\annotation-newparagraph.svg" />
+    <Content Include="static\viewer\images\annotation-noicon.svg" />
+    <Content Include="static\viewer\images\annotation-note.svg" />
+    <Content Include="static\viewer\images\annotation-paragraph.svg" />
+    <Content Include="static\viewer\images\findbarButton-next%402x.png" />
+    <Content Include="static\viewer\images\findbarButton-next-rtl%402x.png" />
+    <Content Include="static\viewer\images\findbarButton-next-rtl.png" />
+    <Content Include="static\viewer\images\findbarButton-next.png" />
+    <Content Include="static\viewer\images\findbarButton-previous%402x.png" />
+    <Content Include="static\viewer\images\findbarButton-previous-rtl%402x.png" />
+    <Content Include="static\viewer\images\findbarButton-previous-rtl.png" />
+    <Content Include="static\viewer\images\findbarButton-previous.png" />
+    <Content Include="static\viewer\images\grab.cur" />
+    <Content Include="static\viewer\images\grabbing.cur" />
+    <Content Include="static\viewer\images\loading-icon.gif" />
+    <Content Include="static\viewer\images\loading-small%402x.png" />
+    <Content Include="static\viewer\images\loading-small.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-documentProperties%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-documentProperties.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-firstPage%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-firstPage.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-handTool%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-handTool.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-lastPage%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-lastPage.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-rotateCcw%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-rotateCcw.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-rotateCw%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-rotateCw.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-selectTool%402x.png" />
+    <Content Include="static\viewer\images\secondaryToolbarButton-selectTool.png" />
+    <Content Include="static\viewer\images\shadow.png" />
+    <Content Include="static\viewer\images\texture.png" />
+    <Content Include="static\viewer\images\toolbarButton-bookmark%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-bookmark.png" />
+    <Content Include="static\viewer\images\toolbarButton-download%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-download.png" />
+    <Content Include="static\viewer\images\toolbarButton-menuArrows%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-menuArrows.png" />
+    <Content Include="static\viewer\images\toolbarButton-openFile%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-openFile.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageDown%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageDown-rtl%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageDown-rtl.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageDown.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageUp%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageUp-rtl%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageUp-rtl.png" />
+    <Content Include="static\viewer\images\toolbarButton-pageUp.png" />
+    <Content Include="static\viewer\images\toolbarButton-presentationMode%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-presentationMode.png" />
+    <Content Include="static\viewer\images\toolbarButton-print%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-print.png" />
+    <Content Include="static\viewer\images\toolbarButton-search%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-search.png" />
+    <Content Include="static\viewer\images\toolbarButton-secondaryToolbarToggle%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-secondaryToolbarToggle-rtl%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-secondaryToolbarToggle-rtl.png" />
+    <Content Include="static\viewer\images\toolbarButton-secondaryToolbarToggle.png" />
+    <Content Include="static\viewer\images\toolbarButton-sidebarToggle%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-sidebarToggle-rtl%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-sidebarToggle-rtl.png" />
+    <Content Include="static\viewer\images\toolbarButton-sidebarToggle.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewAttachments%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewAttachments.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewOutline%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewOutline-rtl%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewOutline-rtl.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewOutline.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewThumbnail%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-viewThumbnail.png" />
+    <Content Include="static\viewer\images\toolbarButton-zoomIn%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-zoomIn.png" />
+    <Content Include="static\viewer\images\toolbarButton-zoomOut%402x.png" />
+    <Content Include="static\viewer\images\toolbarButton-zoomOut.png" />
+    <Content Include="static\viewer\images\treeitem-collapsed%402x.png" />
+    <Content Include="static\viewer\images\treeitem-collapsed-rtl%402x.png" />
+    <Content Include="static\viewer\images\treeitem-collapsed-rtl.png" />
+    <Content Include="static\viewer\images\treeitem-collapsed.png" />
+    <Content Include="static\viewer\images\treeitem-expanded%402x.png" />
+    <Content Include="static\viewer\images\treeitem-expanded.png" />
+    <Content Include="static\viewer\locale\ach\viewer.properties" />
+    <Content Include="static\viewer\locale\af\viewer.properties" />
+    <Content Include="static\viewer\locale\ak\viewer.properties" />
+    <Content Include="static\viewer\locale\an\viewer.properties" />
+    <Content Include="static\viewer\locale\ar\viewer.properties" />
+    <Content Include="static\viewer\locale\ast\viewer.properties" />
+    <Content Include="static\viewer\locale\as\viewer.properties" />
+    <Content Include="static\viewer\locale\az\viewer.properties" />
+    <Content Include="static\viewer\locale\be\viewer.properties" />
+    <Content Include="static\viewer\locale\bg\viewer.properties" />
+    <Content Include="static\viewer\locale\bn-BD\viewer.properties" />
+    <Content Include="static\viewer\locale\bn-IN\viewer.properties" />
+    <Content Include="static\viewer\locale\br\viewer.properties" />
+    <Content Include="static\viewer\locale\bs\viewer.properties" />
+    <Content Include="static\viewer\locale\ca\viewer.properties" />
+    <Content Include="static\viewer\locale\csb\viewer.properties" />
+    <Content Include="static\viewer\locale\cs\viewer.properties" />
+    <Content Include="static\viewer\locale\cy\viewer.properties" />
+    <Content Include="static\viewer\locale\da\viewer.properties" />
+    <Content Include="static\viewer\locale\de\viewer.properties" />
+    <Content Include="static\viewer\locale\el\viewer.properties" />
+    <Content Include="static\viewer\locale\en-GB\viewer.properties" />
+    <Content Include="static\viewer\locale\en-US\viewer.properties" />
+    <Content Include="static\viewer\locale\en-ZA\viewer.properties" />
+    <Content Include="static\viewer\locale\eo\viewer.properties" />
+    <Content Include="static\viewer\locale\es-AR\viewer.properties" />
+    <Content Include="static\viewer\locale\es-CL\viewer.properties" />
+    <Content Include="static\viewer\locale\es-ES\viewer.properties" />
+    <Content Include="static\viewer\locale\es-MX\viewer.properties" />
+    <Content Include="static\viewer\locale\et\viewer.properties" />
+    <Content Include="static\viewer\locale\eu\viewer.properties" />
+    <Content Include="static\viewer\locale\fa\viewer.properties" />
+    <Content Include="static\viewer\locale\ff\viewer.properties" />
+    <Content Include="static\viewer\locale\fi\viewer.properties" />
+    <Content Include="static\viewer\locale\fr\viewer.properties" />
+    <Content Include="static\viewer\locale\fy-NL\viewer.properties" />
+    <Content Include="static\viewer\locale\ga-IE\viewer.properties" />
+    <Content Include="static\viewer\locale\gd\viewer.properties" />
+    <Content Include="static\viewer\locale\gl\viewer.properties" />
+    <Content Include="static\viewer\locale\gu-IN\viewer.properties" />
+    <Content Include="static\viewer\locale\he\viewer.properties" />
+    <Content Include="static\viewer\locale\hi-IN\viewer.properties" />
+    <Content Include="static\viewer\locale\hr\viewer.properties" />
+    <Content Include="static\viewer\locale\hu\viewer.properties" />
+    <Content Include="static\viewer\locale\hy-AM\viewer.properties" />
+    <Content Include="static\viewer\locale\id\viewer.properties" />
+    <Content Include="static\viewer\locale\is\viewer.properties" />
+    <Content Include="static\viewer\locale\it\viewer.properties" />
+    <Content Include="static\viewer\locale\ja\viewer.properties" />
+    <Content Include="static\viewer\locale\ka\viewer.properties" />
+    <Content Include="static\viewer\locale\kk\viewer.properties" />
+    <Content Include="static\viewer\locale\km\viewer.properties" />
+    <Content Include="static\viewer\locale\kn\viewer.properties" />
+    <Content Include="static\viewer\locale\ko\viewer.properties" />
+    <Content Include="static\viewer\locale\ku\viewer.properties" />
+    <Content Include="static\viewer\locale\lg\viewer.properties" />
+    <Content Include="static\viewer\locale\lij\viewer.properties" />
+    <Content Include="static\viewer\locale\locale.properties" />
+    <Content Include="static\viewer\locale\lt\viewer.properties" />
+    <Content Include="static\viewer\locale\lv\viewer.properties" />
+    <Content Include="static\viewer\locale\mai\viewer.properties" />
+    <Content Include="static\viewer\locale\mk\viewer.properties" />
+    <Content Include="static\viewer\locale\ml\viewer.properties" />
+    <Content Include="static\viewer\locale\mn\viewer.properties" />
+    <Content Include="static\viewer\locale\mr\viewer.properties" />
+    <Content Include="static\viewer\locale\ms\viewer.properties" />
+    <Content Include="static\viewer\locale\my\viewer.properties" />
+    <Content Include="static\viewer\locale\nb-NO\viewer.properties" />
+    <Content Include="static\viewer\locale\nl\viewer.properties" />
+    <Content Include="static\viewer\locale\nn-NO\viewer.properties" />
+    <Content Include="static\viewer\locale\nso\viewer.properties" />
+    <Content Include="static\viewer\locale\oc\viewer.properties" />
+    <Content Include="static\viewer\locale\or\viewer.properties" />
+    <Content Include="static\viewer\locale\pa-IN\viewer.properties" />
+    <Content Include="static\viewer\locale\pl\viewer.properties" />
+    <Content Include="static\viewer\locale\pt-BR\viewer.properties" />
+    <Content Include="static\viewer\locale\pt-PT\viewer.properties" />
+    <Content Include="static\viewer\locale\rm\viewer.properties" />
+    <Content Include="static\viewer\locale\ro\viewer.properties" />
+    <Content Include="static\viewer\locale\ru\viewer.properties" />
+    <Content Include="static\viewer\locale\rw\viewer.properties" />
+    <Content Include="static\viewer\locale\sah\viewer.properties" />
+    <Content Include="static\viewer\locale\si\viewer.properties" />
+    <Content Include="static\viewer\locale\sk\viewer.properties" />
+    <Content Include="static\viewer\locale\sl\viewer.properties" />
+    <Content Include="static\viewer\locale\son\viewer.properties" />
+    <Content Include="static\viewer\locale\sq\viewer.properties" />
+    <Content Include="static\viewer\locale\sr\viewer.properties" />
+    <Content Include="static\viewer\locale\sv-SE\viewer.properties" />
+    <Content Include="static\viewer\locale\sw\viewer.properties" />
+    <Content Include="static\viewer\locale\ta-LK\viewer.properties" />
+    <Content Include="static\viewer\locale\ta\viewer.properties" />
+    <Content Include="static\viewer\locale\te\viewer.properties" />
+    <Content Include="static\viewer\locale\th\viewer.properties" />
+    <Content Include="static\viewer\locale\tl\viewer.properties" />
+    <Content Include="static\viewer\locale\tn\viewer.properties" />
+    <Content Include="static\viewer\locale\tr\viewer.properties" />
+    <Content Include="static\viewer\locale\uk\viewer.properties" />
+    <Content Include="static\viewer\locale\ur\viewer.properties" />
+    <Content Include="static\viewer\locale\vi\viewer.properties" />
+    <Content Include="static\viewer\locale\wo\viewer.properties" />
+    <Content Include="static\viewer\locale\xh\viewer.properties" />
+    <Content Include="static\viewer\locale\zh-CN\viewer.properties" />
+    <Content Include="static\viewer\locale\zh-TW\viewer.properties" />
+    <Content Include="static\viewer\locale\zu\viewer.properties" />
+    <Content Include="static\viewer\viewer.css" />
+    <Content Include="static\viewer\viewer.html" />
+    <Content Include="static\viewer\viewer.js" />
+    <Content Include="static\viewer\viewer.js.map" />
+    <Content Include="templates\Forum\forum.html" />
+    <Content Include="templates\GameEngine\game.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="templates\blog.html" />
+    <Content Include="templates\rts.html" />
+    <Content Include="templates\upload.html" />
+    <Content Include="templates\upload_video.html" />
+    <Content Include="templates\video.html" />
+    <Content Include="uploads\test.txt" />
+    <Content Include="static\videos\test.mp4" />
+    <Content Include="videos\test.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="C:\Users\daniel.hajjar\source\repos\FlaskWebProject2\FlaskWebProject2\videos\" />
+    <Folder Include="blog\" />
+    <Folder Include="static\" />
+    <Folder Include="static\assets\textures\" />
+    <Folder Include="static\assets\sounds\" />
+    <Folder Include="static\assets\textures\fonts\" />
+    <Folder Include="static\assets\textures\spritesheets\" />
+    <Folder Include="static\content\" />
+    <Folder Include="C:\Users\daniel.hajjar\source\repos\FlaskWebProject2\FlaskWebProject2\static\scripts\Engine\" />
+    <Folder Include="C:\Users\daniel.hajjar\source\repos\FlaskWebProject2\FlaskWebProject2\static\shaders\" />
+    <Folder Include="static\assets\" />
+    <Folder Include="static\emscripten\" />
+    <Folder Include="static\blog\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\images\rts\" />
+    <Folder Include="static\images\RTS\maps\" />
+    <Folder Include="static\scripts\Engine\GameObjects\" />
+    <Folder Include="static\scripts\Engine\Cameras\" />
+    <Folder Include="static\scripts\Engine\Renderables\" />
+    <Folder Include="static\scripts\Engine\Shaders\" />
+    <Folder Include="static\scripts\Game\Objects\" />
+    <Folder Include="static\scripts\libs\" />
+    <Folder Include="static\scripts\rts\" />
+    <Folder Include="static\viewer\" />
+    <Folder Include="static\scripts\Engine\" />
+    <Folder Include="static\scripts\Engine\Core\" />
+    <Folder Include="static\scripts\Engine\Core\Resources\" />
+    <Folder Include="static\scripts\Game\" />
+    <Folder Include="static\scripts\Engine\lib\" />
+    <Folder Include="static\scripts\Game\Util\" />
+    <Folder Include="static\shaders\" />
+    <Folder Include="static\shaders\Game\" />
+    <Folder Include="static\videos\" />
+    <Folder Include="static\scripts\" />
+    <Folder Include="static\viewer\cmaps\" />
+    <Folder Include="static\viewer\images\" />
+    <Folder Include="static\viewer\locale\" />
+    <Folder Include="static\viewer\locale\ach\" />
+    <Folder Include="static\viewer\locale\af\" />
+    <Folder Include="static\viewer\locale\ak\" />
+    <Folder Include="static\viewer\locale\an\" />
+    <Folder Include="static\viewer\locale\ar\" />
+    <Folder Include="static\viewer\locale\ast\" />
+    <Folder Include="static\viewer\locale\as\" />
+    <Folder Include="static\viewer\locale\az\" />
+    <Folder Include="static\viewer\locale\be\" />
+    <Folder Include="static\viewer\locale\bg\" />
+    <Folder Include="static\viewer\locale\bn-BD\" />
+    <Folder Include="static\viewer\locale\bn-IN\" />
+    <Folder Include="static\viewer\locale\br\" />
+    <Folder Include="static\viewer\locale\bs\" />
+    <Folder Include="static\viewer\locale\ca\" />
+    <Folder Include="static\viewer\locale\csb\" />
+    <Folder Include="static\viewer\locale\cs\" />
+    <Folder Include="static\viewer\locale\cy\" />
+    <Folder Include="static\viewer\locale\da\" />
+    <Folder Include="static\viewer\locale\de\" />
+    <Folder Include="static\viewer\locale\el\" />
+    <Folder Include="static\viewer\locale\en-GB\" />
+    <Folder Include="static\viewer\locale\en-US\" />
+    <Folder Include="static\viewer\locale\en-ZA\" />
+    <Folder Include="static\viewer\locale\eo\" />
+    <Folder Include="static\viewer\locale\es-AR\" />
+    <Folder Include="static\viewer\locale\es-CL\" />
+    <Folder Include="static\viewer\locale\es-ES\" />
+    <Folder Include="static\viewer\locale\es-MX\" />
+    <Folder Include="static\viewer\locale\et\" />
+    <Folder Include="static\viewer\locale\eu\" />
+    <Folder Include="static\viewer\locale\fa\" />
+    <Folder Include="static\viewer\locale\ff\" />
+    <Folder Include="static\viewer\locale\fi\" />
+    <Folder Include="static\viewer\locale\fr\" />
+    <Folder Include="static\viewer\locale\fy-NL\" />
+    <Folder Include="static\viewer\locale\ga-IE\" />
+    <Folder Include="static\viewer\locale\gd\" />
+    <Folder Include="static\viewer\locale\gl\" />
+    <Folder Include="static\viewer\locale\gu-IN\" />
+    <Folder Include="static\viewer\locale\he\" />
+    <Folder Include="static\viewer\locale\hi-IN\" />
+    <Folder Include="static\viewer\locale\hr\" />
+    <Folder Include="static\viewer\locale\hu\" />
+    <Folder Include="static\viewer\locale\hy-AM\" />
+    <Folder Include="static\viewer\locale\id\" />
+    <Folder Include="static\viewer\locale\is\" />
+    <Folder Include="static\viewer\locale\it\" />
+    <Folder Include="static\viewer\locale\ja\" />
+    <Folder Include="static\viewer\locale\ka\" />
+    <Folder Include="static\viewer\locale\kk\" />
+    <Folder Include="static\viewer\locale\km\" />
+    <Folder Include="static\viewer\locale\kn\" />
+    <Folder Include="static\viewer\locale\ko\" />
+    <Folder Include="static\viewer\locale\ku\" />
+    <Folder Include="static\viewer\locale\lg\" />
+    <Folder Include="static\viewer\locale\lij\" />
+    <Folder Include="static\viewer\locale\lt\" />
+    <Folder Include="static\viewer\locale\lv\" />
+    <Folder Include="static\viewer\locale\mai\" />
+    <Folder Include="static\viewer\locale\mk\" />
+    <Folder Include="static\viewer\locale\ml\" />
+    <Folder Include="static\viewer\locale\mn\" />
+    <Folder Include="static\viewer\locale\mr\" />
+    <Folder Include="static\viewer\locale\ms\" />
+    <Folder Include="static\viewer\locale\my\" />
+    <Folder Include="static\viewer\locale\nb-NO\" />
+    <Folder Include="static\viewer\locale\nl\" />
+    <Folder Include="static\viewer\locale\nn-NO\" />
+    <Folder Include="static\viewer\locale\nso\" />
+    <Folder Include="static\viewer\locale\oc\" />
+    <Folder Include="static\viewer\locale\or\" />
+    <Folder Include="static\viewer\locale\pa-IN\" />
+    <Folder Include="static\viewer\locale\pl\" />
+    <Folder Include="static\viewer\locale\pt-BR\" />
+    <Folder Include="static\viewer\locale\pt-PT\" />
+    <Folder Include="static\viewer\locale\rm\" />
+    <Folder Include="static\viewer\locale\ro\" />
+    <Folder Include="static\viewer\locale\ru\" />
+    <Folder Include="static\viewer\locale\rw\" />
+    <Folder Include="static\viewer\locale\sah\" />
+    <Folder Include="static\viewer\locale\si\" />
+    <Folder Include="static\viewer\locale\sk\" />
+    <Folder Include="static\viewer\locale\sl\" />
+    <Folder Include="static\viewer\locale\son\" />
+    <Folder Include="static\viewer\locale\sq\" />
+    <Folder Include="static\viewer\locale\sr\" />
+    <Folder Include="static\viewer\locale\sv-SE\" />
+    <Folder Include="static\viewer\locale\sw\" />
+    <Folder Include="static\viewer\locale\ta-LK\" />
+    <Folder Include="static\viewer\locale\ta\" />
+    <Folder Include="static\viewer\locale\te\" />
+    <Folder Include="static\viewer\locale\th\" />
+    <Folder Include="static\viewer\locale\tl\" />
+    <Folder Include="static\viewer\locale\tn\" />
+    <Folder Include="static\viewer\locale\tr\" />
+    <Folder Include="static\viewer\locale\uk\" />
+    <Folder Include="static\viewer\locale\ur\" />
+    <Folder Include="static\viewer\locale\vi\" />
+    <Folder Include="static\viewer\locale\wo\" />
+    <Folder Include="static\viewer\locale\xh\" />
+    <Folder Include="static\viewer\locale\zh-CN\" />
+    <Folder Include="static\viewer\locale\zh-TW\" />
+    <Folder Include="static\viewer\locale\zu\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\GameEngine\" />
+    <Folder Include="templates\GameEngine\src\" />
+    <Folder Include="templates\Forum\" />
+    <Folder Include="uploads\" />
+    <Folder Include="uploads\videos\" />
+    <Folder Include="videos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

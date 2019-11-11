@@ -1,0 +1,131 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%;       /* 100% Full-height */
+    width: 0;           /* 0 width - change this with JavaScript */
+    position: fixed;    /* Stay in place */
+    z-index: 1;         /* Stay on top */
+    top: 0;             /* Stay at the top */
+    left: 0;
+    background-color: #111;     /* Black */
+    overflow-x: hidden;     /* Disable horizontal scroll */
+    padding-top: 60px;  /* Place content 60px from the top */
+    transition: 0.5s;   /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.rect1 {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    background-color: #4cff00;
+    transition: 1.4s;
+}
+
+.rect1:hover {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+}
+
+.rects {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 0;
+    background-color: red;
+}
+
+.rects b {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.rects b:hover {
+    font-size: 50px;
+    color: cyan;
+    transition: 0.3s;
+}
+
+/* Style page content - use this if you want to push the page content to
+the right when you open the side navigation. */
+#main {
+    transition: margin-left .5s;
+    background-color: inherit;
+    border-color: black;
+    border-width: 2px;
+    position: fixed;
+    right: 0px;
+    left: 10%;
+    height: 100%;
+    top: 0px;
+    width: 90%;
+}
+
+#button1 {
+    position: fixed;
+    background: url('/static/images/menu_icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+#button1:hover {
+    background-color: lightgray;
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+#text {
+    padding-top: 15px;
+    padding-left: 20px;
+    left: 25%;
+    right: 10%;
+    height: 90%;
+    background-color: gray;
+}
+
+/* On smaller screens, where height is less than 450px, change the style
+of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav { 
+        padding-top: 15px;
+    }
+    .sidenav a { font-size: 18px; }
+}

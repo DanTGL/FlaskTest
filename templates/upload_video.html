@@ -1,0 +1,17 @@
+﻿<html>
+<head>
+    <title>Upload</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/upload_video.css" />
+</head>
+<body>
+    <form method=POST enctype=multipart/form-data action="{{ url_for('upload_video') }}">
+        <div id="main">
+            <input type=file name="video" />
+            <input type="text" name="json_name" placeholder="Optional Json name" />
+            <input type="text" name="video_name" placeholder="Video name" />
+            <input type="text" name="video_desc" placeholder="Video description" />
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+</html>
